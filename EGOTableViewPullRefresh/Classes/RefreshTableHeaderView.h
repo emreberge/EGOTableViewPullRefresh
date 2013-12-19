@@ -1,11 +1,9 @@
 //
-//  MessageInterceptor.h
-//
-//  Proposed from e.James on 10/05/10.
-//  Link: http://stackoverflow.com/a/3862591
-//
-//  Created by Emre Berge Ergenekon on 2011-07-30.
-//  Copyright 2011 Emre Berge Ergenekon. All rights reserved.
+//  RefreshTableHeaderView.h
+//  
+//  Created by Devin Doty on 10/14/09.
+//  Rewritten by Marius Rackwitz on 10/18/12.
+//  Copyright 2009 enormego. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -13,10 +11,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-//
+//  
 //  The above copyright notice and this permission notice shall be included in
 //  all copies or substantial portions of the Software.
-//
+//  
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -26,17 +24,15 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "PullTableSideView.h"
 
 
-@interface MessageInterceptor : NSObject
+@interface RefreshTableHeaderView : PullTableSideView
 
-@property (nonatomic, assign) id receiver;
-@property (nonatomic, assign) id middleMan;
+@property (nonatomic, retain) UILabel* lastUpdatedLabel;
 
-+ (instancetype)messageInterceptorOver:(id)middleMan to:(id)receiver;
+- (void)refreshLastUpdatedDate;
 
 @end
-
-
-MessageInterceptor* InterceptMessages(id middleMan, id receiver);

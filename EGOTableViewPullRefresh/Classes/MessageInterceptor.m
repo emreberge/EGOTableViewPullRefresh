@@ -1,6 +1,8 @@
 //
 //  MessageInterceptor.m
-//  TableViewPull
+//
+//  Proposed from e.James on 10/05/10.
+//  Link: http://stackoverflow.com/a/3862591
 //
 //  Created by Emre Berge Ergenekon on 2011-07-30.
 //  Copyright 2012 Emre Berge Ergenekon. All rights reserved.
@@ -24,24 +26,47 @@
 //  THE SOFTWARE.
 //
 
-//  From http://stackoverflow.com/questions/3498158/intercept-obj-c-delegate-messages-within-a-subclass
-
 #import "MessageInterceptor.h"
 
+
 @implementation MessageInterceptor
+
 @synthesize receiver;
 @synthesize middleMan;
 
+
+#pragma mark - Initialization
+
+MessageInterceptor* InterceptMessages(id middleMan, id receiver) {
+    return [MessageInterceptor messageInterceptorOver:middleMan to:receiver];
+}
+
++ (instancetype)messageInterceptorOver:(id)middleMan to:(id)receiver {
+    MessageInterceptor* messageInterceptor = [self new];
+    messageInterceptor.receiver  = receiver;
+    messageInterceptor.middleMan = middleMan;
+    return messageInterceptor;
+}
+
+
+#pragma mark - NSObject overrides
+
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     if ([middleMan respondsToSelector:aSelector]) { return middleMan; }
-    if ([receiver respondsToSelector:aSelector]) { return receiver; }
+    if ([receiver respondsToSelector:aSelector])  { return receiver;  }
     return [super forwardingTargetForSelector:aSelector];
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
     if ([middleMan respondsToSelector:aSelector]) { return YES; }
-    if ([receiver respondsToSelector:aSelector]) { return YES; }
+    if ([receiver respondsToSelector:aSelector])  { return YES; }
     return [super respondsToSelector:aSelector];
+}
+
+- (BOOL)conformsToProtocol:(Protocol *)aProtocol {
+    if ([middleMan conformsToProtocol:aProtocol]) { return YES; }
+    if ([receiver conformsToProtocol:aProtocol])  { return YES; }
+    return [super conformsToProtocol:aProtocol];
 }
 
 @end

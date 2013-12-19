@@ -1,11 +1,9 @@
 //
-//  MessageInterceptor.h
+//  NSDate+LastUpdatedTime.h
 //
-//  Proposed from e.James on 10/05/10.
-//  Link: http://stackoverflow.com/a/3862591
-//
-//  Created by Emre Berge Ergenekon on 2011-07-30.
-//  Copyright 2011 Emre Berge Ergenekon. All rights reserved.
+//  Created by Devin Doty on 10/14/09.
+//  Rewritten by Marius Rackwitz on 10/18/12.
+//  Copyright 2009 enormego. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -29,14 +27,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface MessageInterceptor : NSObject
+@interface NSDate (LastUpdatedTime)
 
-@property (nonatomic, assign) id receiver;
-@property (nonatomic, assign) id middleMan;
-
-+ (instancetype)messageInterceptorOver:(id)middleMan to:(id)receiver;
+- (NSString *)describeTimeIntervalSinceNowAsTimeSinceLastUpdate;
 
 @end
-
-
-MessageInterceptor* InterceptMessages(id middleMan, id receiver);

@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C311998F15A5CE47006733DB /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C311997F15A5CE47006733DB /* EGORefreshTableHeaderView.m */; };
+		20B64B6F1635466500EBA324 /* NSDate+LastUpdatedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B64B661635456E00EBA324 /* NSDate+LastUpdatedTime.m */; };
+		20B64B701635466800EBA324 /* RefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B64B681635456E00EBA324 /* RefreshTableHeaderView.m */; };
+		20B64B73163546A400EBA324 /* PullTableSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B64B72163546A400EBA324 /* PullTableSideView.m */; };
+		711F1E5A1704B61C0097B3B5 /* TTTAddressFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F1E331704B61B0097B3B5 /* TTTAddressFormatter.m */; };
+		711F1E5B1704B61C0097B3B5 /* TTTArrayFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F1E351704B61B0097B3B5 /* TTTArrayFormatter.m */; };
+		711F1E5C1704B61C0097B3B5 /* TTTLocationFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F1E371704B61B0097B3B5 /* TTTLocationFormatter.m */; };
+		711F1E5D1704B61C0097B3B5 /* TTTOrdinalNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F1E391704B61B0097B3B5 /* TTTOrdinalNumberFormatter.m */; };
+		711F1E5E1704B61C0097B3B5 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F1E3B1704B61B0097B3B5 /* TTTTimeIntervalFormatter.m */; };
+		711F1E5F1704B61C0097B3B5 /* TTTUnitOfInformationFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F1E3D1704B61B0097B3B5 /* TTTUnitOfInformationFormatter.m */; };
+		711F1E601704B61C0097B3B5 /* TTTURLRequestFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F1E3F1704B61B0097B3B5 /* TTTURLRequestFormatter.m */; };
+		711F1E641704B61C0097B3B5 /* FormatterKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = 711F1E441704B61B0097B3B5 /* FormatterKit.strings */; };
+		71F71B091704583100E71B80 /* PullTableViewLan.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71F71B0B1704583100E71B80 /* PullTableViewLan.strings */; };
 		C311999015A5CE47006733DB /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C311998115A5CE47006733DB /* LoadMoreTableFooterView.m */; };
 		C311999115A5CE47006733DB /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C311998315A5CE47006733DB /* MessageInterceptor.m */; };
 		C311999215A5CE47006733DB /* PullTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C311998515A5CE47006733DB /* PullTableView.m */; };
@@ -32,8 +43,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C311997E15A5CE47006733DB /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		C311997F15A5CE47006733DB /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		20B64B651635456E00EBA324 /* NSDate+LastUpdatedTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+LastUpdatedTime.h"; sourceTree = "<group>"; };
+		20B64B661635456E00EBA324 /* NSDate+LastUpdatedTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LastUpdatedTime.m"; sourceTree = "<group>"; };
+		20B64B671635456E00EBA324 /* RefreshTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshTableHeaderView.h; sourceTree = "<group>"; };
+		20B64B681635456E00EBA324 /* RefreshTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshTableHeaderView.m; sourceTree = "<group>"; };
+		20B64B71163546A300EBA324 /* PullTableSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullTableSideView.h; sourceTree = "<group>"; };
+		20B64B72163546A400EBA324 /* PullTableSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullTableSideView.m; sourceTree = "<group>"; };
+		20B64B74163546DA00EBA324 /* PullTableSideView+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PullTableSideView+Protected.h"; sourceTree = "<group>"; };
+		711F1E321704B61B0097B3B5 /* TTTAddressFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAddressFormatter.h; sourceTree = "<group>"; };
+		711F1E331704B61B0097B3B5 /* TTTAddressFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAddressFormatter.m; sourceTree = "<group>"; };
+		711F1E341704B61B0097B3B5 /* TTTArrayFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTArrayFormatter.h; sourceTree = "<group>"; };
+		711F1E351704B61B0097B3B5 /* TTTArrayFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTArrayFormatter.m; sourceTree = "<group>"; };
+		711F1E361704B61B0097B3B5 /* TTTLocationFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTLocationFormatter.h; sourceTree = "<group>"; };
+		711F1E371704B61B0097B3B5 /* TTTLocationFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTLocationFormatter.m; sourceTree = "<group>"; };
+		711F1E381704B61B0097B3B5 /* TTTOrdinalNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTOrdinalNumberFormatter.h; sourceTree = "<group>"; };
+		711F1E391704B61B0097B3B5 /* TTTOrdinalNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTOrdinalNumberFormatter.m; sourceTree = "<group>"; };
+		711F1E3A1704B61B0097B3B5 /* TTTTimeIntervalFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTTimeIntervalFormatter.h; sourceTree = "<group>"; };
+		711F1E3B1704B61B0097B3B5 /* TTTTimeIntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTTimeIntervalFormatter.m; sourceTree = "<group>"; };
+		711F1E3C1704B61B0097B3B5 /* TTTUnitOfInformationFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTUnitOfInformationFormatter.h; sourceTree = "<group>"; };
+		711F1E3D1704B61B0097B3B5 /* TTTUnitOfInformationFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTUnitOfInformationFormatter.m; sourceTree = "<group>"; };
+		711F1E3E1704B61B0097B3B5 /* TTTURLRequestFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTURLRequestFormatter.h; sourceTree = "<group>"; };
+		711F1E3F1704B61B0097B3B5 /* TTTURLRequestFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTURLRequestFormatter.m; sourceTree = "<group>"; };
+		711F1E451704B61B0097B3B5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/FormatterKit.strings; sourceTree = "<group>"; };
+		711F1E461704B61B0097B3B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FormatterKit.strings; sourceTree = "<group>"; };
+		711F1E471704B61B0097B3B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/FormatterKit.strings; sourceTree = "<group>"; };
+		711F1E481704B61B0097B3B5 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/FormatterKit.strings; sourceTree = "<group>"; };
+		711F1E491704B61B0097B3B5 /* nn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nn; path = nn.lproj/FormatterKit.strings; sourceTree = "<group>"; };
+		71F71B0A1704583100E71B80 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/PullTableViewLan.strings; sourceTree = "<group>"; };
+		71F71B0C1704583800E71B80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PullTableViewLan.strings; sourceTree = "<group>"; };
 		C311998015A5CE47006733DB /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
 		C311998115A5CE47006733DB /* LoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableFooterView.m; sourceTree = "<group>"; };
 		C311998215A5CE47006733DB /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
@@ -80,6 +117,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711F1E0F1704B61B0097B3B5 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				711F1E311704B61B0097B3B5 /* FormatterKit */,
+			);
+			name = Libs;
+			path = ../Libs;
+			sourceTree = "<group>";
+		};
+		711F1E311704B61B0097B3B5 /* FormatterKit */ = {
+			isa = PBXGroup;
+			children = (
+				711F1E441704B61B0097B3B5 /* FormatterKit.strings */,
+				711F1E321704B61B0097B3B5 /* TTTAddressFormatter.h */,
+				711F1E331704B61B0097B3B5 /* TTTAddressFormatter.m */,
+				711F1E341704B61B0097B3B5 /* TTTArrayFormatter.h */,
+				711F1E351704B61B0097B3B5 /* TTTArrayFormatter.m */,
+				711F1E361704B61B0097B3B5 /* TTTLocationFormatter.h */,
+				711F1E371704B61B0097B3B5 /* TTTLocationFormatter.m */,
+				711F1E381704B61B0097B3B5 /* TTTOrdinalNumberFormatter.h */,
+				711F1E391704B61B0097B3B5 /* TTTOrdinalNumberFormatter.m */,
+				711F1E3A1704B61B0097B3B5 /* TTTTimeIntervalFormatter.h */,
+				711F1E3B1704B61B0097B3B5 /* TTTTimeIntervalFormatter.m */,
+				711F1E3C1704B61B0097B3B5 /* TTTUnitOfInformationFormatter.h */,
+				711F1E3D1704B61B0097B3B5 /* TTTUnitOfInformationFormatter.m */,
+				711F1E3E1704B61B0097B3B5 /* TTTURLRequestFormatter.h */,
+				711F1E3F1704B61B0097B3B5 /* TTTURLRequestFormatter.m */,
+			);
+			name = FormatterKit;
+			path = FormatterKit/FormatterKit;
+			sourceTree = "<group>";
+		};
 		C311997C15A5CE47006733DB /* EGOTableViewPullRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +162,13 @@
 		C311997D15A5CE47006733DB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C311997E15A5CE47006733DB /* EGORefreshTableHeaderView.h */,
-				C311997F15A5CE47006733DB /* EGORefreshTableHeaderView.m */,
+				20B64B651635456E00EBA324 /* NSDate+LastUpdatedTime.h */,
+				20B64B661635456E00EBA324 /* NSDate+LastUpdatedTime.m */,
+				20B64B671635456E00EBA324 /* RefreshTableHeaderView.h */,
+				20B64B681635456E00EBA324 /* RefreshTableHeaderView.m */,
+				20B64B71163546A300EBA324 /* PullTableSideView.h */,
+				20B64B74163546DA00EBA324 /* PullTableSideView+Protected.h */,
+				20B64B72163546A400EBA324 /* PullTableSideView.m */,
 				C311998015A5CE47006733DB /* LoadMoreTableFooterView.h */,
 				C311998115A5CE47006733DB /* LoadMoreTableFooterView.m */,
 				C311998215A5CE47006733DB /* MessageInterceptor.h */,
@@ -116,6 +190,7 @@
 				C311998C15A5CE47006733DB /* grayArrow@2x.png */,
 				C311998D15A5CE47006733DB /* whiteArrow.png */,
 				C311998E15A5CE47006733DB /* whiteArrow@2x.png */,
+				71F71B0B1704583100E71B80 /* PullTableViewLan.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -124,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				C3292AB9142776BF009428B5 /* EGOTableViewPullRefreshDemo */,
+				711F1E0F1704B61B0097B3B5 /* Libs */,
 				C3292AB2142776BF009428B5 /* Frameworks */,
 				C3292AB0142776BF009428B5 /* Products */,
 			);
@@ -199,12 +275,19 @@
 /* Begin PBXProject section */
 		C3292AA6142776BF009428B5 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = C3292AA9142776BF009428B5 /* Build configuration list for PBXProject "EGOTableViewPullRefreshDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
+				es,
+				nb,
+				nn,
 			);
 			mainGroup = C3292AA4142776BF009428B5;
 			productRefGroup = C3292AB0142776BF009428B5 /* Products */;
@@ -232,6 +315,8 @@
 				C311999815A5CE47006733DB /* grayArrow@2x.png in Resources */,
 				C311999915A5CE47006733DB /* whiteArrow.png in Resources */,
 				C311999A15A5CE47006733DB /* whiteArrow@2x.png in Resources */,
+				71F71B091704583100E71B80 /* PullTableViewLan.strings in Resources */,
+				711F1E641704B61C0097B3B5 /* FormatterKit.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,16 +330,47 @@
 				C3292AC0142776BF009428B5 /* main.m in Sources */,
 				C3292AC4142776BF009428B5 /* EGOTableViewPullRefreshDemoAppDelegate.m in Sources */,
 				C3292ACA142776C0009428B5 /* EGOTableViewPullRefreshDemoViewController.m in Sources */,
-				C311998F15A5CE47006733DB /* EGORefreshTableHeaderView.m in Sources */,
+				20B64B701635466800EBA324 /* RefreshTableHeaderView.m in Sources */,
+				20B64B6F1635466500EBA324 /* NSDate+LastUpdatedTime.m in Sources */,
 				C311999015A5CE47006733DB /* LoadMoreTableFooterView.m in Sources */,
 				C311999115A5CE47006733DB /* MessageInterceptor.m in Sources */,
 				C311999215A5CE47006733DB /* PullTableView.m in Sources */,
+				20B64B73163546A400EBA324 /* PullTableSideView.m in Sources */,
+				711F1E5A1704B61C0097B3B5 /* TTTAddressFormatter.m in Sources */,
+				711F1E5B1704B61C0097B3B5 /* TTTArrayFormatter.m in Sources */,
+				711F1E5C1704B61C0097B3B5 /* TTTLocationFormatter.m in Sources */,
+				711F1E5D1704B61C0097B3B5 /* TTTOrdinalNumberFormatter.m in Sources */,
+				711F1E5E1704B61C0097B3B5 /* TTTTimeIntervalFormatter.m in Sources */,
+				711F1E5F1704B61C0097B3B5 /* TTTUnitOfInformationFormatter.m in Sources */,
+				711F1E601704B61C0097B3B5 /* TTTURLRequestFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		711F1E441704B61B0097B3B5 /* FormatterKit.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				711F1E451704B61B0097B3B5 /* de */,
+				711F1E461704B61B0097B3B5 /* en */,
+				711F1E471704B61B0097B3B5 /* es */,
+				711F1E481704B61B0097B3B5 /* nb */,
+				711F1E491704B61B0097B3B5 /* nn */,
+			);
+			name = FormatterKit.strings;
+			path = ../Localizations;
+			sourceTree = "<group>";
+		};
+		71F71B0B1704583100E71B80 /* PullTableViewLan.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71F71B0A1704583100E71B80 /* de */,
+				71F71B0C1704583800E71B80 /* en */,
+			);
+			name = PullTableViewLan.strings;
+			sourceTree = "<group>";
+		};
 		C3292ABC142776BF009428B5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +413,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -314,7 +430,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -330,6 +446,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EGOTableViewPullRefreshDemo/EGOTableViewPullRefreshDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "EGOTableViewPullRefreshDemo/EGOTableViewPullRefreshDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -341,6 +458,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EGOTableViewPullRefreshDemo/EGOTableViewPullRefreshDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "EGOTableViewPullRefreshDemo/EGOTableViewPullRefreshDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

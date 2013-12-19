@@ -1,20 +1,20 @@
 //
-//  EGORefreshTableHeaderView.h
-//  Demo
+//  LoadMoreTableFooterView.h
 //
-//  Created by Devin Doty on 10/14/09October14.
+//  Created by Devin Doty on 10/14/09.
+//  Rewritten by Marius Rackwitz on 10/18/12.
 //  Copyright 2009 enormego. All rights reserved.
-//
+//  
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
 //  in the Software without restriction, including without limitation the rights
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-//
+//  
 //  The above copyright notice and this permission notice shall be included in
 //  all copies or substantial portions of the Software.
-//
+//  
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -24,38 +24,9 @@
 //  THE SOFTWARE.
 //
 
-// This class has derived from the EGORefreshTableHeaderView
-
-#import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
-#import "EGORefreshTableHeaderView.h"
-
-@protocol LoadMoreTableFooterDelegate;
-@interface LoadMoreTableFooterView : UIView {
-	
-	id _delegate;
-	EGOPullState _state;
-    
-	UILabel *_statusLabel;
-	CALayer *_arrowImage;
-	UIActivityIndicatorView *_activityView;
-    
-    // Set this to Yes when egoRefreshTableHeaderDidTriggerRefresh delegate is called and No with egoRefreshScrollViewDataSourceDidFinishedLoading
-    BOOL isLoading;
-	
-}
-
-@property(nonatomic,assign) id <LoadMoreTableFooterDelegate> delegate;
-
-- (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
-- (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;
-- (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView;
-- (void)startAnimatingWithScrollView:(UIScrollView *) scrollView;
-- (void)setBackgroundColor:(UIColor *)backgroundColor textColor:(UIColor *) textColor arrowImage:(UIImage *) arrowImage;
+#import "PullTableSideView.h"
 
 
-@end
+@interface LoadMoreTableFooterView : PullTableSideView
 
-@protocol LoadMoreTableFooterDelegate
-- (void)loadMoreTableFooterDidTriggerLoadMore:(LoadMoreTableFooterView*)view;
 @end
